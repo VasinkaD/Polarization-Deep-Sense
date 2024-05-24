@@ -1,7 +1,7 @@
 # All-fiber microendoscopic polarization sensing at single-photon level aided by deep-learning
 
-This repository provides data and supplementary material to the paper **All-fiber microendoscopic polarization sensing at single-photon level aided by deep-learning**, by Martin Bielak, Dominik Vašinka, and Miroslav Ježek. 
-[arXiv:2405.02172 [physics.optics]](https://arxiv.org/abs/2405.02172)
+This repository provides data and supplementary material to the paper **All-fiber microendoscopic polarization sensing at single-photon level aided by deep-learning**, by Martin Bielak, Dominik Vašinka, and Miroslav Ježek. <br>
+Currently available at [arXiv:2405.02172 [physics.optics]](https://arxiv.org/abs/2405.02172)
 
 The provided files contain Python (3.11) codes written as Jupyter notebooks to reproduce the results presented in the paper, along with the necessary data stored as Numpy (1.24.3) arrays. The deep learning models were built using the Keras (2.12.0) and Tensorflow (2.12.0) libraries.
 
