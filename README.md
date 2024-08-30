@@ -39,8 +39,8 @@ Requires the following files:
 A Jupyter notebook reproducing the graph shown in Fig. 4 - comparison of the polarization state time evolution with and without a diatom moving in front of the all-fiber sensor. <br>
 Stored in the main directory. <br>
 Requires the following files:
-- Measured count distributions for each pixel of the polarization scan stored at "Data_sets/Scan_Dense_connective_tissue/Dense_connective_tissue_data.npz"
-- A deep learning model stored at "Trained_models/Scan_Dense_connective_tissue_model.h5"
+- Measured count distributions for each pixel of the diatom sensing stored at "Data_sets/Scan_Diatom/Diatom_data.npz"
+- A deep learning model stored at "Trained_models/Scan_Diatom_model.h5"
 
 ### Supporting_func_file.py
 A Python file containing the definitions of functions, which are called by the files listed above. <br>
@@ -62,10 +62,10 @@ Called by the codes:
 - Dense_connective_tissue.ipynb
 
 ### Scan_Diatom_model.h5
-The model used to reconstruct the polarization states in each time bin of the moving diatom scan, shown in Fig 4. <br>
+The model used to reconstruct the polarization states in each bin of the moving diatom scan, shown in Fig 4. <br>
 Stored in the folder "Trained_models" <br>
 Called by the codes:
-- Dense_connective_tissue.ipynb
+- Graph_Diatom.ipynb
 
 ### Channels_dependency_[X]_channels.h5
 The series of models used to reproduce the graph shown in panel (a) of Fig. 2. The "X" in the name is a placeholder for the actual number separating each model. <br>
@@ -89,11 +89,11 @@ Stored in the folder "Data_sets/Scan_Dense_connective_tissue" <br>
 Called by the codes:
 - Dense_connective_tissue.ipynb
 
-### Graph_Diatom.npz
+### Diatom_data.npz
 A data file containing measured count distributions for each time bin of the polarization scan of a moving diatom, shown in Fig. 4. <br>
 Stored in the folder "Data_sets/Scan_Diatom" <br>
 Called by the codes:
-- Dense_connective_tissue.ipynb
+- Graph_Diatom.ipynb
 
 ### Used_channel_combination.npy
 A Numpy array containing a list of active detection channels for each deep learning model used for reproducing the graph shown in the (a) panel of Fig. 2. <br>
