@@ -42,6 +42,13 @@ Requires the following files:
 - Measured count distributions for each pixel of the diatom sensing stored at "Data_sets/Scan_Diatom/Diatom_data.npz"
 - A deep learning model stored at "Trained_models/Scan_Diatom_model.h5"
 
+### USAF_test.ipynb
+A Jupyter notebook reproducing the USAF test results - the image comparison and the resolution evaluation. <br>
+Stored in the main directory. <br>
+Requires the following files:
+- A numpy file stored at "Data_sets/USAF_test/USAF_test_CCD.npz" containing a polarization matrix for each image pixel reconstructed from the CCD data using a classical method.
+- A numpy file stored at "Data_sets/USAF_test/USAF_test_Sensor.npz" containing a polarization matrix for each image pixel reconstructed from the sensor data using a deep learning model.
+
 ### Supporting_func_file.py
 A Python file containing the definitions of functions, which are called by the files listed above. <br>
 Stored in the main directory.
@@ -94,6 +101,18 @@ A data file containing measured count distributions for each time bin of the pol
 Stored in the folder "Data_sets/Scan_Diatom" <br>
 Called by the codes:
 - Graph_Diatom.ipynb
+
+### USAF_test_CCD.npz
+A data file containing a polarization matrix for each USAF-test pixel reconstructed from the CCD data using a classical method. <br>
+Stored in the folder "Data_sets/USAF_test" <br>
+Called by the codes:
+- USAF_test.ipynb
+
+### USAF_test_Sensor.npz
+A data file containing a polarization matrix for each USAF-test pixel reconstructed from the sensor data using a deep learning model. <br>
+Stored in the folder "Data_sets/USAF_test" <br>
+Called by the codes:
+- USAF_test.ipynb
 
 ### Used_channel_combination.npy
 A Numpy array containing a list of active detection channels for each deep learning model used for reproducing the graph shown in the (a) panel of Fig. 2. <br>
