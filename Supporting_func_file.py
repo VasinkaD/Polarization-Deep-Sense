@@ -6,7 +6,7 @@ import keras
 ##########################################
 
 def Version_check():
-	if np.__version__ != "1.24.3":
+	if np.__version__ != "1.26.0":
 		print("The notebook was built using numpy version 1.24.3, while you are currently using the " + str(np.__version__) + " version. This may cause differences in the obtained results.")
 	
 	if tf.__version__ != "2.12.0":
@@ -15,7 +15,7 @@ def Version_check():
 	if keras.__version__ != "2.12.0":
 		print("The notebook was built using keras version 2.12.0, while you are currently using the " + str(keras.__version__) + " version. This may cause differences in the obtained results.")
 		
-	if np.__version__ == "1.24.3" and tf.__version__ == "2.12.0" and keras.__version__ == "2.12.0":
+	if np.__version__ == "1.26.0" and tf.__version__ == "2.12.0" and keras.__version__ == "2.12.0":
 		print("All packages are using the targeted versions.")
 
 ##########################################
