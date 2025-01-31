@@ -8,7 +8,7 @@ import scipy
 
 def Version_check():
     if np.__version__ != "1.26.0":
-        print("The notebook was built using numpy version 1.24.3, while you are currently using the " + str(np.__version__) + " version. This may cause differences in the obtained results.")
+        print("The notebook was built using numpy version 1.26.0, while you are currently using the " + str(np.__version__) + " version. This may cause differences in the obtained results.")
 
     if tf.__version__ != "2.12.0":
         print("The notebook was built using tensorflow version 2.12.0, while you are currently using the " + str(tf.__version__) + " version. This may cause differences in the obtained results.")
